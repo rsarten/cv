@@ -1,0 +1,254 @@
+\documentclass{article}[10pt] % use larger type; default would be 10pt
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{libertine}
+\renewcommand*\familydefault{\sfdefault}  %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\usepackage{mdwlist}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{floatflt}
+\usepackage{graphicx}
+\usepackage{mweights}
+ 
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{
+  a4paper,
+  left=0.65in,
+  right=0.65in,
+  top=.5in,
+  nohead,
+  nofoot
+}
+
+% Remove URL link borders
+\hypersetup{urlbordercolor={1 1 1}}
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+\definecolor{soft}{gray}{0.25}
+\definecolor{titlecolour}{rgb}{0.6,0.1,0.15}
+\definecolor{altcolour}{rgb}{0.1, 0.3,0.6}
+
+
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\bfseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+\def\name{Rory Sarten}
+
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*0}{*1}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+
+% Don't indent paragraphs.
+\setlength{\parindent}{0em}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{-15pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\textwidth}{493.55777pt}
+\setlength{\hoffset}{5pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+\newcommand{\heading}[1]{
+	\vspace{22pt}
+	\sectionline
+	\subsection*{\color{titlecolour}\centering{#1}}	\sectionline \\
+}
+
+\newcommand{\jobtitle}[3]{
+	\vspace{10 pt}
+	\raggedleft\textbf{\color{altcolour}#1} \hfill \textit{#2} \\
+	\raggedright\textbf{\color{soft}#3} 
+	\\%\vspace{-12 pt}\\
+	}
+
+% Make lists without bullets
+
+
+\renewenvironment{itemize*}{
+
+  \begin{list}{}{
+    %\vspace{2pt}
+    \itemsep 4pt
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+    \vspace{7pt}
+}
+
+
+
+\newcommand{\sectionline}{%
+  \vspace{-6pt}%
+ {\centering\rule{\linewidth}{.7pt}}
+  \vspace{-13pt}
+}
+
+\setlength{\columnsep}{32pt}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+{\color{titlecolour}{\Huge R}{\huge ory }{\Huge S}{\huge arten}}
+%\small
+
+
+\vspace{20pt}
+
+\hspace{5.5em}
+\begin{minipage}{1\textwidth }
+\color{soft}
+  \begin{tabular}{llll}
+Mobile: & +64 27 814 2315  & \quad \quad Address: & 35 Boundary Road \\
+Email: & \href{mailto:rorysarten@gmail.com}{rorysarten@gmail.com} & \quad \quad &  Kelburn, 6012 Wellington \\
+  \end{tabular}
+\end{minipage}
+
+\vspace{8pt}
+\raggedright
+
+
+%\hspace{1.5em}
+\begin{minipage}{1\textwidth }
+I am enthusiastic about data and its potential for positively shaping changes and improving lives. I have a diverse skill set built around statistical and programming capabilities, and strong leadership and relationship building.
+
+\end{minipage}
+\vspace{1pt}
+
+\vspace{-18pt}
+
+\heading{Skills Profile}
+\vspace{12pt}
+
+{\bfseries \color{altcolour}Data leadership} 
+\\I have been responsible for leading several large scale projects to modernise systems and processes around critical data sources for New Zealand. Key to success has been growing and supporting a culture that explores problems from new angles, is open to new tools and methods, and invests in building skills and capabilities that carry innovation over the long term. I have great enthusiasm for mentoring and training, with a strong focus on promoting best practice.\\
+\vspace{10pt}
+
+{\bfseries \color{altcolour}Communication and relationships} 
+\\I enjoy team dynamics – planning, executing, and problem solving on collaborative projects and problems. In my roles I have actively worked to build and maintain a wide range of relationships that give me ready access to guidance and cooperation from those with experience and specialist knowledge. Because of my broad skill set I communicate and collaborate well with technical specialists, subject matter experts and leaders.\\
+\vspace{10pt}
+
+{\bfseries \color{altcolour}Technical} 
+\\I have a strong interest in programming, system architecture and solution design. I care deeply about modular, flexible solutions that minimise complexity and risk wherever possible. I am comfortable working with several general and statistical programming languages, database types, data structures, API creation and use, and ETL software.\\
+\vspace{10pt}
+
+{\bfseries \color{altcolour}Analytic and quantitative} 
+\\I enjoy complex challenges that require robust analytical skills and give me opportunities to exercise my strong numerical intuition. I am capable of using a wide range of analytic tools to detect, examine, solve and communicate problems and findings.\\
+\vspace{10pt}
+
+\heading{Relevant Work Experience}
+\vspace{6pt}
+
+\jobtitle{Senior Data Scientist, Child Poverty Project - Income and Poverty Team}{June 2019--ongoing}{Statistics New Zealand}
+The Child Poverty Reduction Act 2018 led to numerous methodological and technical challenges for Stats NZ. In this role I was responsible for:\\
+\begin{itemize*}
+	\vspace{4pt}
+	\item Building and supporting a business unit culture in which analysts had to grow their data literacy, and methodological and technical capabilities, to adapted to new demands and pressures 
+	\item Training and mentoring analysts in the use of R, Python, SQL, ETL tools, APIs and services, version control, and other increasingly required technical skills
+	\item Designing the systems and processes to support the social survey infrastructure required for running the Longtitudinal Survey of Income and Housing Costs
+\end{itemize*}
+
+\jobtitle{Statistical Analyst (level 2) Child Poverty Project - Income and Poverty Team}{June 2018--June 2019}{Statistics New Zealand}
+\begin{itemize*}
+	\vspace{4pt}
+	\item Led the redevelopment of processing methodologies and technologies for the social surveys that support child poverty estimates
+	\item Analyising and reporting on discrepencies between survey and administrative data sources and understanding how these can be used to create quality estimates
+\end{itemize*}
+
+\jobtitle{Technical Lead 2018 Census Processing and Evaluations}{July 2015--June 2018}{Statistics New Zealand}
+I worked on 2018 Census Processing and Evaluations from early Proof of Concept work, through to methodological development and system building, maintenance and running during the census. This role involved substantial time working in concert with architects, developers and subject matter experts to deliver census processing capabilities. In this role I: \\
+\begin{itemize*}
+	\vspace{4pt}
+	\item Was responsible for designing, building, and running of the data processing workflows and coordination of the processing technical team work 
+	\item Communicated and coordinated with vendors and other project leads
+	\item Spent several months as acting Senior Analyst coordinating cross-programme strategies
+\end{itemize*}
+
+\jobtitle{Research Analyst/Head of Research}{Mar 2009–Dec 2012}{McGuinness Institute}
+I was a research analyst, and held the position of Head of Research for 2012, at the McGuinness Institute, a small, non-partisan, public policy think tank. In this role I:\\
+\begin{itemize*}
+	\vspace{4pt}
+	\item Chiefly researched and wrote for print and web publication on a wide number of subjects
+	\item Was responsible for the Institute’s websites and technology infrastructure
+	\item Met regularly with external project partners and reviewers
+	\item Gave numerous presentations across a range of subjects and audiences
+\end{itemize*}
+
+\begin{multicols}{2}
+
+\heading{Technical Skills}
+\vspace{8pt}
+%\begin{itemize*}
+\hangindent = 1.5em
+\vspace{2pt}
+{\bfseries \color{altcolour}Statistics}. I am enthusiastic about data and analytics and through my study and work I have developed a strong numerical and methodological foundation. At Stats NZ I have had frequent opportunities to exercise and extend this skill set. I am particularly confident with statistical programming.\\
+\hangindent = 1.5em
+\vspace{6pt}
+{\bfseries \color{altcolour}R}. I have used R extensively for solving complex problems, visualising and communicating information uncovered in data, and automating data manipulation processes. I have built a number of R packages, incorporating unit-testing frameworks and performance optimisation through Rcpp.\\
+\hangindent = 1.5em
+\vspace{6pt}
+{\bfseries \color{altcolour}Python}. I have used Python to build APIs, webscrapers, data processing and parsing packages and enjoy its use for statistical and general programming.\\
+\hangindent = 1.5em
+\vspace{6pt}
+{\bfseries \color{altcolour}Databases}. I am profficient with the use of databases to access, manipulate and store data. I am comfortable with both structured databases such as SQL, as well as 'NoSQL' databases such as MongoDB.\\
+\hangindent = 1.5em
+\vspace{6pt}
+{\bfseries \color{altcolour}General Programming}. I enjoy using compiled languages such as C++ and Java to write programmes. I care deeply about writing good, clean, idiomatic code. I have a strong interest in the application of Functional Programming approaches.\\
+\hangindent = 1.5em
+\vspace{6pt}
+{\bfseries \color{altcolour}Pentaho}. I have extensive experience using the Extract Transform Load (ETL) tool Pentaho to build large-scale statistical production workflows.\\
+\hangindent = 1.5em
+\vspace{6pt}
+
+\vspace{-8pt}
+
+\columnbreak
+
+\heading{Education}
+\vspace{8pt}
+\raggedleft {\bfseries \color{altcolour}Graduate Diploma of Science} \hfill  \textit{2017}\\
+\raggedright
+\begin{itemize*}
+	\item Majoring in Statistics \\(2013) Victoria University Dean’s List – Sciences
+\end{itemize*}
+
+\raggedleft {\bfseries \color{altcolour}Sociology (honours)} \hfill  \textit{2006}\\
+\raggedright
+\begin{itemize*}
+	\item Awarded First Class Honours
+\end{itemize*}
+
+\raggedleft {\bfseries \color{altcolour}Bachelor of Arts} \hfill  \textit{2005}\\
+\raggedright
+\begin{itemize*}
+	\item Majoring in Sociology and Political Science
+\end{itemize*}
+\vspace{-10pt}
+\heading{Referees}
+\vspace{8pt}
+On request.
+
+\end{multicols}
+
+\vspace{150pt}
+
+
+
+%\vspace{-18pt}
+
+%\end{multicols}
+\end{document}
