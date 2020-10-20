@@ -1,0 +1,165 @@
+\documentclass{article}[10pt] % use larger type; default would be 10pt
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{libertine}
+\renewcommand*\familydefault{\sfdefault}  %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\usepackage{mdwlist}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{floatflt}
+\usepackage{graphicx}
+\usepackage{mweights}
+ 
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{
+  a4paper,
+  left=0.65in,
+  right=0.65in,
+  top=.5in,
+  nohead,
+  nofoot
+}
+
+% Remove URL link borders
+\hypersetup{urlbordercolor={1 1 1}}
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+\definecolor{soft}{gray}{0.25}
+\definecolor{titlecolour}{rgb}{0.6,0.1,0.15}
+\definecolor{altcolour}{rgb}{0.1, 0.3,0.6}
+
+
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\bfseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+\def\name{Rory Sarten}
+
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*0}{*1}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+
+% Don't indent paragraphs.
+\setlength{\parindent}{0em}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{-15pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\textwidth}{493.55777pt}
+\setlength{\hoffset}{5pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+
+\newcommand{\heading}[1]{
+	\vspace{22pt}
+	\sectionline
+	\subsection*{\color{titlecolour}\centering{#1}}	\sectionline \\
+}
+
+\newcommand{\jobtitle}[3]{
+	\vspace{10 pt}
+	\raggedleft\textbf{\color{altcolour}#1} \hfill \textit{#2} \\
+	\raggedright\textbf{\color{soft}#3} 
+	\\%\vspace{-12 pt}\\
+	}
+
+% Make lists without bullets
+
+
+\renewenvironment{itemize*}{
+
+  \begin{list}{}{
+    %\vspace{2pt}
+    \itemsep 4pt
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+    \vspace{7pt}
+}
+
+
+
+\newcommand{\sectionline}{%
+  \vspace{-6pt}%
+ {\centering\rule{\linewidth}{.7pt}}
+  \vspace{-13pt}
+}
+
+\setlength{\columnsep}{32pt}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+
+
+{\color{titlecolour}{\Huge R}{\huge ory }{\Huge S}{\huge arten}}
+%\small
+
+
+\vspace{20pt}
+
+\hspace{5.5em}
+\begin{minipage}{1\textwidth }
+\color{soft}
+  \begin{tabular}{llll}
+Mobile: & +64 27 814 2315  & \quad \quad Address: & 35 Boundary Road \\
+Email: & \href{mailto:rorysarten@gmail.com}{rorysarten@gmail.com} & \quad \quad &  Kelburn, 6012 Wellington \\
+  \end{tabular}
+\end{minipage}
+
+\vspace{8pt}
+\raggedright
+
+
+%\hspace{1.5em}
+\begin{minipage}{1\textwidth }
+\vspace{20pt}
+
+Tēnā koe
+
+\vspace{10pt}
+My recent conversation with Joe about the Data Innovation Lead role and the current challenges and initiatives at the Reserve Bank has left me very interested in understanding more, and potentially contributing to this space.
+
+\vspace{10pt}
+I am very enthusiastic about the strategic use of data and how this can be employed to improve the lives of New Zealanders. I am always interested in complex challenges that demand a range of skills and give me opportunities to extend my capabilities and expose me to new people, knowledge, and experiences.
+
+\vspace{10pt}
+I have led several data centric projects sparked by complex emerging demands. I enjoy approaching new problems and exploring the space where existing knowledge and new capabilities meet.
+
+\vspace{10pt}
+My experience leading the modernisation of data processing systems for the Stats NZ social survey programme reinforced for me the emphasis that needs to be placed on fostering culture and capability. Challenging people to separate how things have been done from what needs to be done – tapping into existing expertise and understanding customer needs – is key.
+
+\vspace{10pt}
+A continually evolving world of technologies, methodologies and architectures presents many opportunities and a wide array of risks. I care deeply about managing risk through coherent solution architecture, modularisation, flexible design and limiting complexity. I am also an ardent supporter of coding best practice: style, standardisation, language idioms, unit testing, version control.
+
+\vspace{10pt}
+I have mentored and trained many people, new and experienced, in the use of new technologies and behaviours. I have taken great enjoyment in this aspect of my work.
+
+\vspace{10pt}
+Put simply, I want to do great work in a job that continues to challenge me and allows me to work alongside great people on a day-to-day basis!
+
+\vspace{10pt}
+I look forward to hearing from you.
+
+
+\vspace{10pt}
+Rory Sarten
+
+\end{minipage}
+
+
+%\vspace{-18pt}
+
+%\end{multicols}
+\end{document}
